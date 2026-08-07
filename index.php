@@ -49,8 +49,8 @@
     <h2>Every Second Deserves Luxury</h2>
     <P>Explore the world's finest luxury watches crafted with precision,elegance and timeless excellence</P>
     <div class="hero-buttons">
-        <a href="collection.html" class="btn-primary">Explore Collection</a>
-        <a href="about.html" class="btn-secondary">Learn More</a>
+        <a href="collection.php" class="btn-primary">Explore Collection</a>
+        <a href="about.php" class="btn-secondary">Learn More</a>
     </div>
 
     </div>
