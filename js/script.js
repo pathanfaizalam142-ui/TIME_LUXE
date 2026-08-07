@@ -22,7 +22,30 @@ const themeToggle=document.getElementById("themeToggle");
     }
   });
 }
+        // view details //
+document.querySelectorAll(".detailsbtn").forEach(function(btn){
 
+    btn.onclick = function(){
+
+        const card = this.parentElement.parentElement;
+
+        const name = card.querySelector("h3").textContent;
+        const price = card.querySelector(".price").textContent;
+        const rating = card.querySelector(".rating span").textContent;
+        const shipping = card.querySelector(".shipping").textContent.trim();
+        const warranty = card.querySelector(".warranty").textContent.trim();
+
+        alert(
+            "⌚ " + name + "\n\n" +
+            "💰 " + price + "\n" +
+            "⭐ Rating: " + rating + "/5\n" +
+            "🚚 " + shipping + "\n" +
+            "🛡️ " + warranty
+        );
+
+    };
+
+});
              // Collection search  //
 
 const searchInput=document.getElementById("searchInput");
