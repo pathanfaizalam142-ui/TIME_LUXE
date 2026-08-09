@@ -22,18 +22,24 @@ const themeToggle=document.getElementById("themeToggle");
     }
   });
 }
-        // view details //
-document.querySelectorAll(".detailsbtn").forEach(function(btn){
+// ======================
+// VIEW DETAILS
+// ======================
 
-    btn.onclick = function(){
+document.querySelectorAll(".detailsbtn").forEach(function(btn) {
 
-        const card = this.parentElement.parentElement;
+    btn.addEventListener("click", function() {
 
-        const name = card.querySelector("h3").textContent;
-        const price = card.querySelector(".price").textContent;
-        const rating = card.querySelector(".rating span").textContent;
-        const shipping = card.querySelector(".shipping").textContent.trim();
-        const warranty = card.querySelector(".warranty").textContent.trim();
+        const card = this.closest(".watch-card");
+
+        const name = card.querySelector("h3").textContent.trim();
+        const price = card.querySelector(".price").textContent.trim();
+        const rating = card.querySelector(".rating span").textContent.trim();
+
+        const paragraphs = card.querySelectorAll(".watch-info > p");
+
+        const shipping = paragraphs[0].textContent.trim();
+        const warranty = paragraphs[1].textContent.trim();
 
         alert(
             "⌚ " + name + "\n\n" +
@@ -43,7 +49,7 @@ document.querySelectorAll(".detailsbtn").forEach(function(btn){
             "🛡️ " + warranty
         );
 
-    };
+    });
 
 });
              // Collection search  //
