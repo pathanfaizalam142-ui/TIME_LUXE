@@ -219,9 +219,9 @@
                          <button
                          class="addToCart"
                          data-id="5"
-                         data-name="sekio presage"
+                         data-name="seiko presage"
                          data-price="54999"
-                         data-image="images/sekio.jpg">
+                         data-image="images/seiko.jpg">
                          Add To Cart
                         </button>
                         <a href="https://www.amazon.in/s?k=Seiko+Presage" target="_blank" class="buy-btn">Buy Now</a>
