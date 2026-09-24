@@ -2351,8 +2351,8 @@ body.light-mode .nav-links.active a:hover {
 }
 
 .cart-item .cart-watch-img {
-    width: 250px !important;
-    height: 250px !important;
+    width: 400px !important;
+    height: 400px !important;
     object-fit: contain !important;
     display: block !important;
     flex-shrink: 0;
@@ -2360,7 +2360,7 @@ body.light-mode .nav-links.active a:hover {
 
 @media (max-width: 600px) {
     #cartItems img {
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
     }
 }
