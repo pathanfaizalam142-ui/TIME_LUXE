@@ -2349,3 +2349,17 @@ body.light-mode .nav-links.active a {
 body.light-mode .nav-links.active a:hover {
     color: #047857 !important;
 }
+
+#cartItems img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    #cartItems img {
+        width: 120px;
+        height: 120px;
+    }
+}

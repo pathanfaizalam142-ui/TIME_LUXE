@@ -216,7 +216,7 @@ if (cartItems && totalPrice) {
         cartItems.innerHTML += `
         <div class="cart-item">
 
-            <img src="${item.image}" width="100">
+            <img src="${item.image}" class="cart-watch-img">
 
             <div>
                 <h3>${item.name}</h3>
