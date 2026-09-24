@@ -2350,11 +2350,12 @@ body.light-mode .nav-links.active a:hover {
     color: #047857 !important;
 }
 
-#cartItems img {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    display: block;
+.cart-item .cart-watch-img {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+    display: block !important;
+    flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
